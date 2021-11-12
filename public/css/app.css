@@ -14326,7 +14326,10 @@ body {
 .cocktail-search {
   min-width: 200px;
 }
-
+#cocktailImg {
+  height: 100%;
+  width: auto;
+}
 .custom-green {
   background-color: #6a994e;
   color: white;
