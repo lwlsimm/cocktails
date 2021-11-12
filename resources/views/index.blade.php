@@ -6,7 +6,7 @@
   <h6 class="text-center">Type a cocktail ingredient below and click 'Search' to see all the matching ingredients...</h6>
 
   <div class="d-flex justify-content-center">
-  <form class="input-group" method="GET" action="{{ url('/ingredient-search') }}" id="search-bar">
+  <form class="input-group" method="GET" action="{{ url('https://murmuring-beach-68594.herokuapp.com/ingredient-search') }}" id="search-bar">
      {{ csrf_field() }}
     <input type="text" name="search-term" class="form-control" placeholder="Type ingredient here..." >
     <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
