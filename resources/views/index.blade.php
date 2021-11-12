@@ -19,7 +19,7 @@
   <h6 class="text-center">Click one of the ingredients below to show all the cocktails that you can make...</h6>
 
     
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center flex-wrap">
     
       <?php 
         if(isset($ingredients) && isset($_GET['search-term'])) {
