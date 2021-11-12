@@ -23,7 +23,7 @@
     
       <?php 
         if(isset($ingredients) && isset($_GET['search-term'])) {
-          $searchTerm = $_GET['search-term'];
+          $searchTerm = rtrim($_GET['search-term']);
           $ingredientArray = $ingredients->{'drinks'};
           $noResults = true;
           foreach($ingredientArray as $ingredient) {

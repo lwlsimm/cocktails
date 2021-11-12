@@ -32,12 +32,11 @@ class CocktailController extends Controller
     }
     public function cocktailSearch($ingredient)
     {   
-        $trimmed = rtrim($ingredient);
-        $path = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=".$trimmed;
+        $path = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=".$ingredient;
         $response = Http::get($path);
         $json = json_decode($response);
         return view('drinks', [
-            'ingredient' => $trimmed,
+            'ingredient' => $ingredient,
             'drinksData' => $json
         ]);
     }
