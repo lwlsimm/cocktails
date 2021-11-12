@@ -17,8 +17,8 @@ Route::get('/', function() {
   return view('index');
 });
 
-Route::post('/ingredient-search',[CocktailController::class, 'ingredientSearch']);
-Route::post('/cocktail-search/{ingredient}/',[CocktailController::class, 'cocktailSearch']);
-Route::post('/cocktailView/{cocktail}/',[CocktailController::class, 'getCocktail']);
+Route::get('/ingredient-search',[CocktailController::class, 'ingredientSearch']);
+Route::get('/cocktail-search/{ingredient}/',[CocktailController::class, 'cocktailSearch']);
+Route::get('/cocktailView/{cocktail}/',[CocktailController::class, 'getCocktail']);
 
 
