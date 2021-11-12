@@ -17,12 +17,10 @@
 
   <h2 class="text-center mt-5 color-burgundy">Step 2</h2>
   <h6 class="text-center">Click one of the ingredients below to show all the cocktails that you can make...</h6>
-  <div class="ingredient-display">
+
     
-  </div>
+    < class="d-flex justify-content-center">
     
-    <div class="d-flex justify-content-center">
-    <div id="button-container">
       <?php 
         if(isset($ingredients) && isset($_GET['search-term'])) {
           $searchTerm = $_GET['search-term'];
@@ -46,7 +44,7 @@
           echo $my_drink;
         }
       ?>
-    </div>
+    
     </div>
   </div>
 

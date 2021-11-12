@@ -9,10 +9,6 @@
   $photo = $cockatilArray->{'strDrinkThumb'}
 ?>
 
-
-
-
-
 <div class="container mt-3">
 <button onclick="goBack()" class="btn custom-green mb-3">Back to Cocktails</button>
 <script>
