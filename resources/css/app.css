@@ -48,6 +48,10 @@ body {
   background: #c05a23;
   color: white;
 }
+.cocktail-display {
+  background: #f3722c;
+  color: white;
+}
 .color-burgundy {
   color: #6f0000 !important;
 }

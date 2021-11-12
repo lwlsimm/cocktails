@@ -21,7 +21,7 @@ function goBack() {
 }
 </script>
   
-  <div class="card mb-3 bg-dark-orange " style="max-width: 100%;">
+  <div class="card mb-3 cocktail-display " style="max-width: 100%;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src={{$photo}} class="img-fluid rounded-start" alt="{{$name}}">
