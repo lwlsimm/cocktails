@@ -1,7 +1,7 @@
 
 @include('layouts.header')
 
-  <div class="container">
+  <div class="container mb-4">
     <button onclick="goBack()" class="btn custom-green mb-3 mt-3">Back to Ingredients</button>
       <script>
       function goBack() {
