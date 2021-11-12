@@ -7,7 +7,7 @@
 
   <div class="d-flex justify-content-center">
   <form class="input-group" method="POST" action="{{ url('/ingredient-search') }}" id="search-bar">
-    
+     {{ csrf_field() }}
     <input type="text" name="search-term" class="form-control" placeholder="Type ingredient here...">
       <span class="input-group-btn">
         <button class="btn btn-search custom-green" type="submit" id="search-btn"><i class="fa fa-search fa-fw"></i> Search</button>
