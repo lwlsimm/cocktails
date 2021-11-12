@@ -7,10 +7,8 @@
 
   <div class="d-flex justify-content-center">
   <?php
-
-use Illuminate\Support\Facades\Config;
-
-$formUrl = Config::get('app.url').'/ingredient-search'; 
+    use Illuminate\Support\Facades\Config;
+    $formUrl = Config::get('app.url').'/ingredient-search'; 
   ?>
   <form class="input-group" method="GET" action="{{ $formUrl }}" id="search-bar">
      {{ csrf_field() }}
