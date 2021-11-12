@@ -14329,6 +14329,8 @@ body {
 #cocktailImg {
   height: 100%;
   width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .custom-green {
   background-color: #6a994e;

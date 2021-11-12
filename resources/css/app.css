@@ -20,6 +20,7 @@ body {
 #cocktailImg {
   height: 100%;
   width: auto;
+  object-fit: cover;
 }
 .custom-green {
   background-color: #6a994e;
