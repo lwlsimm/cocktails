@@ -6,7 +6,12 @@
   <h6 class="text-center">Type a cocktail ingredient below and click 'Search' to see all the matching ingredients...</h6>
 
   <div class="d-flex justify-content-center">
-  <?php $formUrl = url('ingredient-search'); ?>
+  <?php
+
+use Illuminate\Support\Facades\Config;
+
+$formUrl = Config::get('app.url').'/ingredient-search'; 
+  ?>
   <form class="input-group" method="GET" action="{{ $formUrl }}" id="search-bar">
      {{ csrf_field() }}
     <input type="text" name="search-term" class="form-control" placeholder="Type ingredient here..." >
