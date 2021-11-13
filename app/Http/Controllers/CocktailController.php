@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 //use App\Services\Cocktails;
 use Carbon\Carbon;
-use Illuminate\Filesystem\Cache;
-use Illuminate\Support\Facades\Cache as FacadesCache;
 use Illuminate\Support\Facades\Http;
 
 // class CocktailController extends Controller
@@ -25,10 +23,8 @@ use Illuminate\Support\Facades\Http;
 class CocktailController extends Controller 
 {
     public function ingredientSearch()
-    {   
-        $response = cache()->remember('ingredientSearch',86400,function() {
-            return Http::get("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list");
-        });
+    {
+        $response = Http::get("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list");
         $json = json_decode($response);
         return view('index', [
             'ingredients' => $json
