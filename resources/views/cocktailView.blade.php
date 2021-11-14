@@ -1,4 +1,5 @@
-@include('layouts.header')
+@extends('layout')
+@section('content')
 <?php
   $cockatilArray = $cocktail->{'drinks'}[0];
   $name = $cockatilArray->{'strDrink'};
@@ -73,11 +74,5 @@ function goBack() {
     </div>
   </div>
 </div>
-
-
-
-  
-  
-
 </div>
-@include('layouts.footer')
+@endsection

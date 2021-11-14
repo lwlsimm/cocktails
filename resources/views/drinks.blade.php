@@ -1,6 +1,6 @@
 
-@include('layouts.header')
-
+@extends('layout')
+@section('content')
   <div class="container mb-4">
     <button onclick="goBack()" class="btn custom-green mb-3 mt-3">Back to Ingredients</button>
       <script>
@@ -30,5 +30,5 @@
     ?>
     </div>
   </div>
+@endsection
 
-@include('layouts.footer')

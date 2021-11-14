@@ -1,6 +1,7 @@
 
-  @include('layouts.header')
+  @extends('layout')
 
+  @section('content')
   <div class="container">
   <h2 class="text-center mt-5 color-burgundy">Step 1</h2>
   <h6 class="text-center">Type a cocktail ingredient below and click 'Search' to see all the matching ingredients...</h6>
@@ -51,5 +52,5 @@
     
     </div>
   </div>
+  @endsection
 
-@include('layouts.footer')
